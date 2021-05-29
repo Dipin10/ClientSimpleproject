@@ -1,0 +1,7 @@
+<script>
+    var a;
+    a=10;
+    console.log(a);
+
+
+</script>

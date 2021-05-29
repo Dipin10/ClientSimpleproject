@@ -1,0 +1,125 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow-x:hidden; 
+    color: #fff;
+    font-family: 'Flamenco', cursive
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url('../images/hello.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+
+}
+.clearfix::after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.row{
+    max-width: 1180px;
+    margin:0 auto;
+
+
+}
+.logo{
+    height:120px;
+    width:auto;
+    float:left
+    margin-top 20px;
+}
+.main-nav{
+    float:right;
+    margin-top:60px;
+
+}
+.main-nav li{
+    display:inline-block;
+    list-style:none;
+    margin-left: 40px;
+
+}
+.main-nav li a{
+    color:#fff;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+
+
+}
+.main-nav li a:hover{
+  border-bottom:2px solid blue;
+}
+  .main-content-header{
+      width: 1180px;
+       /*border: 1px solid red;*/
+      position:absolute;
+      top: 55%;
+      left: 50%;
+      transform:translate(-50%,-50%);
+  } 
+  h1{
+      color:#fff;
+      font-size:240%;
+      word-spacing: 5%;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-weight: lighter;
+  }
+  .btn{
+      display: inline-flex;
+      padding: 10px  30px;
+      font-weight:bolder;
+      text-decoration: blue;
+      text-transform: uppercase;
+      border-radius: 200px;;
+      transition:background_color 0.2%,border0.2%,color0.2;
+
+  }
+  .btn-full{
+      background-color: transparent;
+      color:blueviolet;
+      margin-left: 15px;
+      border:1px solid white;
+  }
+  .btn-full:hover{
+      background-colour:purple;
+  }
+  .btn-nav{
+      background-color: violet;
+      color:wheat;
+      margin-left:15px;
+      border:1px solid blue;
+  }
+  .colorchange{
+      animation:colorchangekalij 1s infinite;
+
+
+  }
+  @keyframes colorchangekalij {
+      0%{color:red}
+      50%{color:blueviolet}
+      100%{color:blue}
+  }
+  /*Responsive view*/
+  @media only screen and(max-width:1180px){
+      .main-contnet-header{
+          width:100%;
+          padding: 0 2%;
+
+      }
+      @media only screen and(max-width:998px){
+          h1(font-size:40px);
+      }
+      .main-nav{display:none}
+      
+  }
